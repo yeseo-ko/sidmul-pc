@@ -6,7 +6,8 @@ html, body{
           height:100%;
           margin:0;
           padding:0;
-          font-size:10px;
+          font-size:14px;
+          color: #444444;
           font-family:'Noto Sans KR', sans-serif, "맑은 고딕","Malgun Gothic";font-weight: 400;
         }
 
@@ -17,3 +18,381 @@ i,em,address{font-style: normal;}
 table{border-collapse: collapse;table-layout: fixed;}
 a{text-decoration: none;color: #444444;}
 button{background: none;border: none;margin:0;padding: 0;}
+
+/* 최상단 메뉴 */
+.top{
+  overflow: hidden;
+  width: 1184px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.top .menu ul li{
+  float: left;
+  margin-left: 32px;
+  margin-top: 20px;
+  
+}
+/* 로그인/회원가입/마이페이지 */
+.top .menu ul li.my{
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.top .menu ul li:first-child{
+  margin-left: 0;
+}
+/* 검색*/
+.top .menu ul li.search{
+  float: right;
+  width: 250px;
+  height: 30px;
+  border: #dddddd 1px solid;
+  border-radius: 50px;
+}
+/* 검색란 */
+.top .menu ul li.search .search_go{
+  width: 215px;
+  height: 26px;
+  border: none;
+  background: none;
+}
+.top .menu ul li.search button img{
+  width: 20px;
+  height: 20px;
+}
+.top .menu ul li.search button{
+  padding-top: 4px;
+  border: none;
+  cursor: pointer;
+}
+/* 로고 및 배너 */
+.slogan{
+  position: relative;
+  overflow: hidden;
+  width: 1184px;
+  height: 130px;
+  margin: 20px auto;
+}
+
+.slogan .logo, .slogan .ad{
+  display: inline-block;
+}
+.slogan h1.logo{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.slogan h1.logo img{
+  width: 261px;
+  height: 74px;
+}
+.slogan span.ad{
+  float: right;
+}
+.slogan span.ad img{
+  width: 211px;
+  height: 102px;
+}
+
+/* 네비게이션 */
+.nvbox{
+  overflow: hidden;
+  width: 1184px;
+  height: 70px;
+  margin: 0 auto;
+}
+.nvbox nav ul{
+  display: flex;  
+  justify-content: center;
+  align-items: center;  
+}
+.nvbox nav ul li{
+  width: 200px;
+}
+
+.nvbox nav ul li a{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+}
+
+.nvbox nav ul li:first-child{
+  width: 192px;
+}
+.nvbox nav ul li:last-child{
+  width: 192px;
+}
+.nvbox nav ul li:first-child a{
+  text-align: left;
+}
+.nvbox nav ul li:last-child a{
+  text-align: right;
+}
+
+/* 메인롤링 */
+.main .rolling .roll_list a{
+  display: block;
+  height: 500px;
+}
+.main .rolling{
+  position: relative;
+}
+.main .rolling .category {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top:0;
+  left: 50%;
+  margin-left: -592px;
+  width: 174px;
+  height: 500px;
+}
+.main .rolling .category ul li{
+  margin: 20px auto;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+/* 지금주목할만한상품 */
+.now{
+  margin: 110px auto;
+  width: 1184px;
+}
+.now h1{
+  margin-bottom: 120px;
+  text-align: center;
+  font-size: 36px;
+}
+.now ul{
+  overflow: hidden;
+  padding-top: 25px;
+  
+}
+.now ul li{
+  float: left;
+  position: relative;
+  width: calc(100%/4 - 40px);
+  margin: 0 26px;
+}
+.now ul li img{
+  width: 100%
+}
+.now ul li:first-child{
+  margin-left: 0;
+}
+
+.now ul li:last-child{
+  margin-right: 0;
+}
+
+.now ul li a{
+  display: block;
+}
+.now ul li p{
+  text-align: center;
+  font-size: 18px;
+  color: #808080;}
+
+.now ul li em{
+  display: block;
+  position: absolute;
+  width: 40px;
+  left: 0px;
+  top: -25px;
+  border-bottom: #95c046 4px solid;
+  text-align: center;
+  font-size: 36px;
+  color: #808080;
+}
+/* 주목상품 롤링버튼 제작*/
+
+/* 서브배너 2종 */
+.sub{
+  position: relative;
+  width: 100%;
+  height: 513px;
+  background: #ffe9d4;
+}
+.sub .img_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1184px;
+}
+.sub .img_box span{
+  display:inline-block;
+}
+.sub .img_box span a{
+  display: block;
+}
+.sub .img_box img{
+  width: 583px;
+  height: 384px;
+}
+
+/* 가장 사랑 받는 제품 */
+.loved{
+  width: 1184px;
+  margin: 110px auto;
+}
+.loved h1{
+  margin-bottom: 120px;
+  text-align: center;
+  font-size: 36px;
+}
+.loved .tabs ul{
+  text-align: center;
+  margin-bottom: 70px;
+}
+.loved .tabs ul li a{
+  display: block;
+  line-height: 60px;
+}
+.loved .tabs ul li{
+  display: inline-block;
+  width: 194px;
+  height: 60px;
+  border:#ebebeb 1px solid;
+  font-size: 18px;
+}
+.loved .tabs ul li:first-child{
+  border: #95c046 1px solid;
+  font-weight: 700;
+}
+/* 상품영역 */
+/* 상품영역 */
+.loved .prdt{
+  position: relative;
+  width: 1184px;
+}
+.loved .prdt > button{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.loved .prdt button.lv_left{
+  left: -40px;
+}
+.loved .prdt button.lv_right{
+  right: -40px;
+}
+.loved .prdt .list{
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.loved .prdt .list>li{
+  display: inline-block;
+  position: relative;
+}
+.loved .bt_box{
+  display: none;
+}
+.loved .prdt .list>li:hover .bt_box{
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 368px;
+  height: 384px;
+  background-color:rgba(0, 0, 0, 0.2);
+}
+
+.loved .prdt .list .cos_image .bt_box ul{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.loved .prdt .list .cos_image .bt_box ul li{
+   display:inline-block;
+   margin:0 2px
+}
+
+/* 오버시 아이콘 3종 */
+.loved .prdt .list .cos_image .bt_box{
+  text-align: center;
+}
+
+.loved .prdt .bt_box ul li button{
+  width: 50px;
+  height: 50px;
+  background:rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+.loved .prdt .bt_box ul li button img{
+  width: 27px;
+  height: 27px;
+}
+
+.loved .prdt .list .cos_image>a{
+  display: block;
+  width: 368px;
+  height: 384px;
+  text-align: center;
+  line-height: 384px;
+  background-color: #f5f5f5;
+}
+.loved .prdt .list .cos_image a img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* 상품정보 */
+.loved .prdt .list .text{
+  margin-top: 16px;
+  text-align: center;
+}
+
+.loved .prdt .list .text p:first-child a{
+  font-size: 12px;
+  color:#ff4d00;
+}
+.loved .prdt .list .text h4{
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.loved .prdt .list .text p:last-child{
+  margin-top: 16px;
+  color:#a1a1a1;
+}
+
+/* 시드물 브랜드관 */
+.brand{
+  width: 1184px;
+  margin: 110px auto;
+  text-align: center;
+  
+}
+.brand h1{
+  margin-bottom: 120px;
+  text-align: center;
+  font-size: 36px;
+}
+.brand .brd_wrap{
+  position: relative;
+  width: 1184px;
+}
+
+.brand .brd_wrap button{
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+}
+
+.brand .brd_wrap button.br_left{
+  left: -40px;
+}
+.brand .brd_wrap button.br_right{
+  right: -40px;
+}
+
+
+/* 1.민중기시리즈 */
+.brand .brd_wrap ol li{
+  display: inline-block;
+}
+.brand .brd_wrap ol li .thum
