@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>/sidmul-pc</title>
+    <link rel="stylesheet" href="/sidmul-pc/css/style.css">
+    <link rel="stylesheet" href="/sidmul-pc/css/slick.css">
+    <script src="/sidmul-pc/js/jquery-1.11.3.js"></script>
+    <script src="/sidmul-pc/js/slick.js"></script>
 </head>
 <body>
     <header>
@@ -22,15 +25,15 @@
                 <li><a href="#null">출석체크</a></li>
                 <li class="search">
                     <input type="text" class="search_go">
-                    <button><img src="/images/search.png" alt="검색"></button>
+                    <button><img src="/sidmul-pc/images/search.png" alt="검색"></button>
                 </li>
             </ul>
         </div>
     </div>
     <!-- 로고 및 배너 -->
     <div class="slogan">
-        <h1 class="logo"><img src="/images/logo.png" alt="logo"></h1>
-        <span class="ad"><img src="/images/top_ad.png" alt="ad"></span>
+        <h1 class="logo"><img src="/sidmul-pc/images/logo.png" alt="logo"></h1>
+        <span class="ad"><img src="/sidmul-pc/images/top_ad.png" alt="ad"></span>
     </div>
     <!-- 네비게이션 -->
     <div class="nvbox">
@@ -39,7 +42,7 @@
                 <li>
                     <a href="#null">
                         <span>
-                            <img src="/images/ham.png" alt="hamberger">
+                            <img src="/sidmul-pc/images/ham.png" alt="hamberger">
                         </span>
                         카테고리
                     </a>
@@ -56,12 +59,24 @@
     <!-- 메인롤링 -->
     <div class="main">
         <div class="rolling">
-            <div class="roll_list">
-                <a href="#null" style="background: url(/images/main.png) no-repeat center;"></a>
-                <a href="#null" style="display: none; background: url(/images/main.png) no-repeat center;"></a>
-                <a href="#null" style="display: none; background: url(/images/main.png) no-repeat center;"></a>
-                <a href="#null" style="display: none; background: url(/images/main.png) no-repeat center;"></a>
+            <div class="main-roll-slide">
+                <div class="roll_list">
+                    <a href="#null" style="background: url(/sidmul-pc/images/main.png) no-repeat center;"></a>
+                    <a href="#null" style="background: url(/sidmul-pc/images/main2.png) no-repeat center;"></a>
+                    <a href="#null" style="background: url(/sidmul-pc/images/main3.png) no-repeat center;"></a>
+                    <a href="#null" style="background: url(/sidmul-pc/images/main4.png) no-repeat center;"></a>
+                </div>
             </div>
+            <script>
+                $('.roll_list').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                });
+              </script>
+
             <div class="category">
                 <ul>
                     <li><a href="#null">신제품</a></li>
@@ -81,44 +96,82 @@
     <div id="container">
         <!-- 지금주목할만한상품 -->
         <div class="now">
-            <h1>지금 주목할만한 상품</h1>
-            <ul>
-                <li>
-                    <em>1</em>
-                    <span class="circle">
-                        <a href="#null"><img src="/images/now1.png" alt="주목상품"></a>
-                    </span>
-                    <p>#뷰라벨 1등 선크림</p>
-                </li>
-                <li>
-                    <em>2</em>
-                    <span class="circle">
-                        <a href="#null"><img src="/images/now2.png" alt="주목상품"></a>
-                    </span>
-                    <p>#TV광고 그 상품</p>
-                </li>
-                <li>
-                    <em>3</em>
-                    <span class="circle">
-                        <a href="#null"><img src="/images/now3.png" alt="주목상품"></a>
-                    </span>
-                    <p>#볼륨 마스카라</p>
-                </li>
-                <li>
-                    <em>4</em>
-                    <span class="circle">
-                        <a href="#null"><img src="/images/now4.png" alt="주목상품"></a>
-                    </span>
-                    <p>#진정 앰플</p>
-                </li>
-            </ul>
+            <h1 class="title">지금 주목할만한 상품</h1>
+            <div class="now_wrap">
+                <ul class="now_ul">
+                    <li class="now_li">
+                        <em>1</em>
+                        <span class="circle">
+                            <a href="#null"><img src="/sidmul-pc/images/now1.png" alt="주목상품"></a>
+                        </span>
+                        <p>#뷰라벨 1등 선크림</p>
+                    </li>
+                    <li class="now_li">
+                        <em>2</em>
+                        <span class="circle">
+                            <a href="#null"><img src="/sidmul-pc/images/now2.png" alt="주목상품"></a>
+                        </span>
+                        <p>#TV광고 그 상품</p>
+                    </li>
+                    <li class="now_li">
+                        <em>3</em>
+                        <span class="circle">
+                            <a href="#null"><img src="/sidmul-pc/images/now3.png" alt="주목상품"></a>
+                        </span>
+                        <p>#볼륨 마스카라</p>
+                    </li>
+                    <li class="now_li">
+                        <em>4</em>
+                        <span class="circle">
+                            <a href="#null"><img src="/sidmul-pc/images/now4.png" alt="주목상품"></a>
+                        </span>
+                        <p>#진정 앰플</p>
+                    </li>
+                    <li class="now_li">
+                        <em>1</em>
+                        <span class="circle">
+                            <a href="#null"><img src="/sidmul-pc/images/now1.png" alt="주목상품"></a>
+                        </span>
+                        <p>#뷰라벨 1등 선크림1</p>
+                    </li>
+                    <li class="now_li">
+                        <em>2</em>
+                        <span class="circle">
+                            <a href="#null"><img src="/sidmul-pc/images/now2.png" alt="주목상품"></a>
+                        </span>
+                        <p>#TV광고 그 상품1</p>
+                    </li>
+                    <li class="now_li">
+                        <em>3</em>
+                        <span class="circle">
+                            <a href="#null"><img src="/sidmul-pc/images/now3.png" alt="주목상품"></a>
+                        </span>
+                        <p>#볼륨 마스카라1</p>
+                    </li>
+                    <li class="now_li">
+                        <em>4</em>
+                        <span class="circle">
+                            <a href="#null"><img src="/sidmul-pc/images/now4.png" alt="주목상품"></a>
+                        </span>
+                        <p>#진정 앰플1</p>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                    $('.now_ul').slick({
+                    slidesToShow:4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    });
+            </script>
         </div>
 
         <!-- 서브배너 2종 -->
         <div class="sub">
             <div class="img_box">
-                <span><a href="#null"><img src="/images/sub_1.png" alt="sub_banner"></a></span>
-                <span><a href="#null"><img src="/images/sub_2.png" alt="sub_banner"></a></span>
+                <span><a href="#null"><img src="/sidmul-pc/images/sub_1.png" alt="sub_banner"></a></span>
+                <span><a href="#null"><img src="/sidmul-pc/images/sub_2.png" alt="sub_banner"></a></span>
             </div>
         </div>
 
@@ -127,115 +180,683 @@
             <h1 class="title">가장 사랑 받는 제품</h1>
             <div class="tabs">
                 <ul>
-                    <li><a href="#null">스킨케어</a></li>
-                    <li><a href="#null">메이크업</a></li>
-                    <li><a href="#null">클렌징</a></li>
-                    <li><a href="#null">선케어</a></li>
+                    <li class="on" data-tab="tabs1"><a href="#null">스킨케어</a></li>
+                    <li data-tab="tabs2"><a href="#null">메이크업</a></li>
+                    <li data-tab="tabs3"><a href="#null">클렌징</a></li>
+                    <li data-tab="tabs4"><a href="#null">선케어</a></li>
                 </ul>
             </div>
             <!-- 상품영역 -->
             <div class="prdt">
-                <button class="lv_left"><img src="/images/left.png" alt="좌"></button>
-                <button class="lv_right"><img src="/images/right.png" alt="우"></button>
+                <button class="lv_left"></button>
+                <button class="lv_right"></button>
                 <!-- 상품 4종 전체 -->
-                <ul class="list">
-                    <!-- 1번 상품 -->
-                    <li class="cos_image">                        
-                        <a href="#null"><img src="/images/lv_pr_1.png" alt="구스팟크림"></a>
-                        <!-- 마우스 오버시-->
-                        <div class="bt_box">
-                            <ul>
-                                <li><button><img src="/images/hover_bag.png" alt="장바구니"></button></li>
-                                <li><button><img src="/images/hover_see.png" alt="상세히"></button></li>
-                                <li><button><img src="/images/hover_heart.png" alt="찜하기"></button></li>
-                            </ul>
-                        </div>
-                        <!-- //마우스 오버시-->
-                        <!-- 상품정보 -->
-                        <div class="text">
-                            <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
-                            <h4>시드물 센텔라 구스팟 크림</h4>
-                            <p>34,000원</p>
-                        </div>
-                    </li>
-                    <!-- 2번 상품 -->
-                    <li class="cos_image">
-                        <a href="#null"><img src="/images/lv_pr_1.png" alt="구스팟크림"></a>
-                        <!-- 마우스 오버시-->
-                        <div class="bt_box">
-                            <ul>
-                                <li><button><img src="/images/hover_bag.png" alt="장바구니"></button></li>
-                                <li><button><img src="/images/hover_see.png" alt="상세히"></button></li>
-                                <li><button><img src="/images/hover_heart.png" alt="찜하기"></button></li>
-                            </ul>
-                        </div>
-                        <!-- //마우스 오버시-->                       
-                        <!-- 상품정보 -->
-                        <div class="text">
-                            <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
-                            <h4>시드물 센텔라 구스팟 크림</h4>
-                            <p>34,000원</p>
-                        </div>
-                    </li>
-                    <!-- 3번 상품 -->
-                    <li class="cos_image">
-                        <a href="#null"><img src="/images/lv_pr_1.png" alt="구스팟크림"></a>
-                        <!-- 마우스 오버시-->
-                        <div class="bt_box">
-                            <ul>
-                                <li><button><img src="/images/hover_bag.png" alt="장바구니"></button></li>
-                                <li><button><img src="/images/hover_see.png" alt="상세히"></button></li>
-                                <li><button><img src="/images/hover_heart.png" alt="찜하기"></button></li>
-                            </ul>
-                        </div>
-                        <!-- //마우스 오버시-->                       
-                        <!-- 상품정보 -->
-                        <div class="text">
-                            <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
-                            <h4>시드물 센텔라 구스팟 크림</h4>
-                            <p>34,000원</p>
-                        </div>
-                    </li>
-                    <!-- 4번 상품 -->
-                    <li class="cos_image">
-                        <a href="#null"><img src="/images/lv_pr_1.png" alt="구스팟크림"></a>                        
-                        <!-- 마우스 오버시-->
-                        <div class="bt_box">
-                            <ul>
-                                <li><button><img src="/images/hover_bag.png" alt="장바구니"></button></li>
-                                <li><button><img src="/images/hover_see.png" alt="상세히"></button></li>
-                                <li><button><img src="/images/hover_heart.png" alt="찜하기"></button></li>
-                            </ul>
-                        </div>
-                        <!-- //마우스 오버시-->                       
-                        <!-- 상품정보 -->
-                        <div class="text">
-                            <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
-                            <h4>시드물 센텔라 구스팟 크림</h4>
-                            <p>34,000원</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="prdt_in">
+                    <div id="tabs1" class="ul_wrap" style="display: block;">
+                        <ul class="list">
+                            <!-- 1번 상품 -->
+                            <li class="cos_image">                        
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 2번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 3번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 4번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>                        
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 1번 상품 -->
+                            <li class="cos_image">                        
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 2번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 3번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 4번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>                        
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tabs2" class="ul_wrap">
+                        <ul class="list">
+                            <!-- 1번 상품 -->
+                            <li class="cos_image">                        
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 2번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 3번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 4번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>                        
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 1번 상품 -->
+                            <li class="cos_image">                        
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 2번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 3번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 4번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>                        
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tabs3" class="ul_wrap">
+                        <ul class="list">
+                            <!-- 1번 상품 -->
+                            <li class="cos_image">                        
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 2번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 3번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 4번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>                        
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 1번 상품 -->
+                            <li class="cos_image">                        
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 2번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 3번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 4번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>                        
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tabs4" class="ul_wrap">
+                        <ul class="list">
+                            <!-- 1번 상품 -->
+                            <li class="cos_image">                        
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 2번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 3번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 4번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>                        
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 1번 상품 -->
+                            <li class="cos_image">                        
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 2번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 3번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                            <!-- 4번 상품 -->
+                            <li class="cos_image">
+                                <a href="#null"><img src="/sidmul-pc/images/lv_pr_1.png" alt="구스팟크림"></a>                        
+                                <!-- 마우스 오버시-->
+                                <div class="bt_box">
+                                    <ul>
+                                        <li><button><img src="/sidmul-pc/images/hover_bag.png" alt="장바구니"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_see.png" alt="상세히"></button></li>
+                                        <li><button><img src="/sidmul-pc/images/hover_heart.png" alt="찜하기"></button></li>
+                                    </ul>
+                                </div>
+                                <!-- //마우스 오버시-->                       
+                                <!-- 상품정보 -->
+                                <div class="text">
+                                    <p><a href="#null">#장벽강화 #스피디진정 #다크스팟</a></p>
+                                    <h4>시드물 센텔라 구스팟 크림</h4>
+                                    <p>34,000원</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <script>
+                $(function(){
+                    $(".loved .tabs ul li").click(function(){
+                        $(".loved .tabs ul li").removeClass("on");
+                        $(this).addClass("on");
+                        var mytabs=$(this).data("tab");
+                        $(".ul_wrap").hide();
+                        $("#"+mytabs).fadeIn();
+                        $('.loved .ul_wrap > ul').slick('setPosition');
+                    });
+                });
+            </script>
+            <script>
+                $('.loved .ul_wrap > ul').slick({
+                    slidesToShow:3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    setPosition:0,
+                });
+            </script>
+            
         </div>
 
         <!-- 시드물 브랜드관 -->
         <div class="brand">
             <h1 class="title">시드물 브랜드관</h1>
             <div class="brd_wrap">
-                <button class="br_left"><img src="/images/left.png" alt=""></button>
-                <button class="br_right"><img src="/images/right.png" alt=""></button>
+                <button class="br_left"></button>
+                <button class="br_right"></button>
                 <ol>
                     <!-- 1.민중기시리즈 -->
                     <li>
                         <div class="thum">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
+                            <a href="#null"><img src="/sidmul-pc/images/brand_bg1.png" alt="series"></a>
                             <p>MIN JUNG GI</p>
                         </div>
                         <div class="dscrt"">
-                            <h6>민중기 시리즈</h6>
+                            <h6>민중기시리즈</h6>
                             <p>제품에 대한 자신감과 신뢰가 있기에<br>
                                 제 이름을 넣은 제품을 모아둔 곳입니다.</p>
                         </div>
@@ -243,13 +864,11 @@
                     <!-- 2. 닥터트럽 -->
                     <li>
                         <div class="thum">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
-                            <p>MIN JUNG GI</p>
+                            <a href="#null"><img src="/sidmul-pc/images/brand_bg2.png" alt="series"></a>
+                            <p>Dr.Troub</p>
                         </div>
                         <div class="dscrt"">
-                            <h6>민중기 시리즈</h6>
+                            <h6>닥터트럽</h6>
                             <p>제품에 대한 자신감과 신뢰가 있기에<br>
                                 제 이름을 넣은 제품을 모아둔 곳입니다.</p>
                         </div>
@@ -257,54 +876,76 @@
                     <!-- 3.뷰리즈 -->
                     <li>
                         <div class="thum">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
-                            <p>MIN JUNG GI</p>
+                            <a href="#null"><img src="/sidmul-pc/images/brand_bg3.png" alt="series"></a>
+                            <p>BEAUREEZE</p>
                         </div>
                         <div class="dscrt"">
-                            <h6>민중기 시리즈</h6>
+                            <h6>뷰리즈</h6>
                             <p>제품에 대한 자신감과 신뢰가 있기에<br>
                                 제 이름을 넣은 제품을 모아둔 곳입니다.</p>
                         </div>
                     </li>
-                    <!-- 휴먼올리고 -->
+                    <!-- 4.휴먼올리고 -->
                     <li>
                         <div class="thum">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
-                            <p>MIN JUNG GI</p>
+                            <a href="#null"><img src="/sidmul-pc/images/brand_bg4.png" alt="series"></a>
+                            <p>HUMAN OLIGO</p>
                         </div>
                         <div class="dscrt"">
-                            <h6>민중기 시리즈</h6>
+                            <h6>휴먼올리고</h6>
+                            <p>제품에 대한 자신감과 신뢰가 있기에<br>
+                                제 이름을 넣은 제품을 모아둔 곳입니다.</p>
+                        </div>
+                    </li>
+                    <!-- 1.민중기시리즈 -->
+                    <li>
+                        <div class="thum">
+                            <a href="#null"><img src="/sidmul-pc/images/brand_bg5.jpg" alt="series"></a>
+                            <p>ACBYE</p>
+                        </div>
+                        <div class="dscrt"">
+                            <h6>아크바이</h6>
+                            <p>제품에 대한 자신감과 신뢰가 있기에<br>
+                                제 이름을 넣은 제품을 모아둔 곳입니다.</p>
+                        </div>
+                    </li>
+                    <!-- 2. 닥터트럽 -->
+                    <li>
+                        <div class="thum">
+                            <a href="#null"><img src="/sidmul-pc/images/brand_bg6.jpg" alt="series"></a>
+                            <p>SACARO</p>
+                        </div>
+                        <div class="dscrt"">
+                            <h6>사카로</h6>
                             <p>제품에 대한 자신감과 신뢰가 있기에<br>
                                 제 이름을 넣은 제품을 모아둔 곳입니다.</p>
                         </div>
                     </li>
                 </ol>
             </div>
+            <script>
+                $('.brand ol').slick({
+                    slidesToShow:4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                });
+            </script>
         </div>
 
         <!-- 시드물 멤버쉽 혜택 안내 -->
         <div class="member">
             <div class="tt_box">
-                <h1 class="title">시드물 멤버쉽 혜택 안내</h1>
-                <span>(*등급별 혜택 상이)</span>
+                <h1 class="title">시드물 멤버쉽 혜택 안내<span>(*등급별 혜택 상이)</span></h1>
                 <p>시드물 멤버십 회원이 되시면 시드물에서 제공하는 다양한 혜택을 받으실 수 있습니다.</p>
             </div>
             <!-- 동그라미 영역 -->
             <div class="mem_wrap">
-                <button class="br_left"><img src="" alt=""></button>
-                <button class="br_right"><img src="" alt=""></button>
                 <!-- 아이콘 5종 정렬 -->
-                <ol>
+                <ol class="swiper-wrapper">
                     <!-- 1.1천원 쿠폰 발급 -->
-                    <li>
+                    <li class="">
                         <div class="gray">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
+                            <a href="#null"><img src="/sidmul-pc/images/quick_1.png" alt="member"></a>
                         </div>
                         <div class="dscrt"">
                             <h6>1천원 쿠폰발급</h6>
@@ -312,23 +953,19 @@
                         </div>
                     </li>
                     <!-- 2.생일축하쿠폰 -->
-                    <li>
+                    <li class="">
                         <div class="gray">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
+                            <a href="#null"><img src="/sidmul-pc/images/quick_2.png" alt="member"></a>
                         </div>
                         <div class="dscrt"">
                             <h6>생일축하 10%할인 쿠폰</h6>
                             <p>생일 당일부터 30일까지 사용가능</p>
                         </div>
                     </li>
-                     <!-- 3.누적금액 사은품 -->
-                     <li>
+                    <!-- 3.누적금액 사은품 -->
+                    <li class="">
                         <div class="gray">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
+                            <a href="#null"><img src="/sidmul-pc/images/quick_3.png" alt="member"></a>
                         </div>
                         <div class="dscrt"">
                             <h6>누적금액별 사은품 증정</h6>
@@ -336,23 +973,19 @@
                         </div>
                     </li>
                     <!-- 4.목요이벤트 -->
-                    <li>
+                    <li class="">
                         <div class="gray">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
+                            <a href="#null"><img src="/sidmul-pc/images/quick_4.png" alt="member"></a>
                         </div>
                         <div class="dscrt"">
                             <h6>목요 이벤트 10%할인</h6>
                             <p>매주 목요일 선정된 상품에 한함</p>
                         </div>
                     </li>
-                     <!-- 5.출첵 -->
-                     <li>
+                    <!-- 5.출첵 -->
+                    <li class="">
                         <div class="gray">
-                            <span>
-                                <a href="#null"><img src="" alt=""></a>
-                            </span>
+                            <a href="#null"><img src="/sidmul-pc/images/quick_5.png" alt="member"></a>
                         </div>
                         <div class="dscrt"">
                             <h6>출석체크 시 할인쿠폰 지급 </h6>
@@ -366,13 +999,13 @@
         <!-- 보고서 및 동물 실험 2종 -->
         <div class="trust">
             <div class="report">
-                <span class="shawdow">
-                    <p>시드물 화장품의 안전한 성분 보고서</p>
+                <span>
+                    <a href="#null"><p>시드물 화장품의 안전한 성분 보고서</p></a>
                 </span>
             </div>
             <div class="animal">
-                <span class="shawdow">
-                    <p>시드물은 동물실험을 반대합니다.</p>
+                <span>
+                    <a href="#null"><p>시드물은 동물실험을 반대합니다.</p></a>
                 </span>
             </div>
         </div>
@@ -381,17 +1014,17 @@
         <div class="review">
             <h1 class="title">고객후기</h1>
             <div class="rvw_wrap">
-                <button class="rv_left"><img src="" alt=""></button>
-                <button class="rv_right"><img src="" alt=""></button>
+                <button class="rv_left"></button>
+                <button class="rv_right"></button>
                 <ul>
                     <!-- 1.후기 -->
                     <li>
                         <div class="left_box">
-                        <a href="#null"><img src="" alt=""></a>
+                        <a href="#null"><img src="/sidmul-pc/images/review1.png" alt=""></a>
                         </div>
                         <div class="right_box">
                             <span class="plus">
-                                <a href="#null"><img src="" alt=""></a>
+                                <a href="#null">+</a>
                             </span>
                             <h5>성인여드름 탈출후기</h5>
                             <p>작성자: il**** </p>
@@ -404,11 +1037,11 @@
                     <!-- 2. 후기 -->
                     <li>
                         <div class="left_box">
-                        <a href="#null"><img src="" alt=""></a>
+                        <a href="#null"><img src="/sidmul-pc/images/review2.png" alt=""></a>
                         </div>
                         <div class="right_box">
                             <span class="plus">
-                                <a href="#null"><img src="" alt=""></a>
+                                <a href="#null">+</a>
                             </span>
                             <h5>성인여드름 탈출후기</h5>
                             <p>작성자: il**** </p>
@@ -421,11 +1054,11 @@
                     <!-- 3. 후기 -->
                     <li>
                         <div class="left_box">
-                        <a href="#null"><img src="" alt=""></a>
+                        <a href="#null"><img src="/sidmul-pc/images/review3.png" alt=""></a>
                         </div>
                         <div class="right_box">
                             <span class="plus">
-                                <a href="#null"><img src="" alt=""></a>
+                                <a href="#null">+</a>
                             </span>
                             <h5>성인여드름 탈출후기</h5>
                             <p>작성자: il**** </p>
@@ -437,70 +1070,93 @@
                     </li>
                 </ul>
             </div>
+            <script>
+                $('.review ul').slick({
+                    slidesToShow:2,
+                    slidesToScroll: 2,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    centerMode:true,
+                });
+            </script>
         </div>
 
         <!-- 최하단 배너 2종 -->
         <div class="bt_sub">
             <div class="consult">
-                    <p>내 피부 고민에 맞는</p>
-                    <h2>1:1 뷰티 컨설팅</h2>
-                    <span class="go"><a href="#"></a>바로가기</a></span>
+                <div class="subwrap">
+                    <div class="txt">
+                        <p>내 피부 고민에 맞는</p>
+                        <h2>1:1 뷰티 컨설팅</h2>
+                        <a class="go" href="#">바로가기</a>
+                    </div>
+                </div>
             </div>
             <div class="news">
-                <p>시드물의 가장 빠른 소식</p>
-                <h2>시드물 통신</h2>
-                <span class="go"><a href="#"></a>바로가기</a></span>
-             </div>
+                <div class="subwrap">
+                    <div class="txt">
+                        <p>시드물의 가장 빠른 소식</p>
+                        <h2>시드물 통신</h2>
+                        <a class="go" href="#">바로가기</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        
     </div>
     <footer>
         <!-- 회사소개 sns -->
         <div class="foot_nv">
-            <ul>
-                <li><a href="#null">회사소개</a></li>
-                <li><a href="#null">개인정보처리방침</a></li>
-                <li><a href="#null">이용약관</a></li>
-                <li><a href="#null">이용안내</a></li>
-                <li><a href="#null">사업자정보확인</a></li>
-            </ul>
-            <ol class="sns">
-                <li><span><a href="#null"></a></span></li>
-                <li><span><a href="#null"></a></span></li>
-                <li><span><a href="#null"></a></span></li>
-                <li><span><a href="#null"></a></span></li>
-            </ol>
+            <div class="foot_nv_box">
+                <ul>
+                    <li><a href="#null">회사소개</a></li>
+                    <li><a href="#null">개인정보처리방침</a></li>
+                    <li><a href="#null">이용약관</a></li>
+                    <li><a href="#null">이용안내</a></li>
+                    <li><a href="#null">사업자정보확인</a></li>
+                </ul>
+                <ol class="sns">
+                    <li><a href="#null"></a></li>
+                    <li><a href="#null"></a></li>
+                    <li><a href="#null"></a></li>
+                    <li><a href="#null"></a></li>
+                </ol>
+            </div>
         </div>
         
         <!-- 로고 및 주소 -->
         <div class="white">
-            <h1 class="ft_logo"><img src="" alt=""></h1>
-            <div class="ft_text">
-                <address>상호 : 주식회사 시드물      주소 : 우)35083 대전광역시 중구 안영로 42
-                    전화 : 1577-9638(해외 : +82-42-716-0227)      팩스 : 042-367-7989
-                    사업자등록번호: 305-81-94469      건강기능식품판매업: 대전 중구 제 503
-                    통신판매업신고번호: 제2008-대전중구-0247호      화장품 제조 판매업 등록필증 제 1163호
-                </address>
-                <p>COPYRIGHT (C) 2008 SIDMOOL ALL RIGHT RESERVED.</p>
+            <div class="text_box">
+                <h1><img src="/sidmul-pc/images/logo.png" alt="logo"></h1>
+                <div class="ft_text">
+                    <address>
+                        상호 : 주식회사 시드물
+                        <br>주소 : 우)35083 대전광역시 중구 안영로 42
+                        <br>전화 : 1577-9638(해외 : +82-42-716-0227)  &emsp; 팩스 : 042-367-7989
+                        <br>사업자등록번호: 305-81-94469 &emsp; 건강기능식품판매업: 대전 중구 제 503
+                        <br>통신판매업신고번호: 제2008-대전중구-0247호 &emsp; 화장품 제조 판매업 등록필증 제 1163호
+                    </address>
+                    <p>COPYRIGHT (C) 2008 SIDMOOL ALL RIGHT RESERVED.</p>
+                </div>
             </div>
             <!-- 상세보기 3종 네모 -->
             <div class="info_box">
                 <span class="bank">
-                    <a href="#null"><img src="" alt="+"></a>
-                    <strong>시드물 입금계좌</strong>
+                    <a class="seemore" href="#null">+</a>
+                    <a href="#null"><strong>시드물 입금계좌</strong></a>
                 </span>
                 <span class="boards">
-                    <a href="#null"><img src="" alt="+"></a>
-                    <strong>게시판모음</strong>
-                </span>
+                    <a class="seemore" href="#null">+</a>
+                    <a href="#null"><strong>게시판모음</strong>
+                </span></a>
                 <span class="map">
-                    <a href="#null"><img src="" alt="+"></a>
-                    <strong>사이트맵</strong>
+                    <a class="seemore" href="#null">+</a>
+                    <a href="#null"><strong>사이트맵</strong></a>
                 </span>
-            </div>
-            <!-- 에스크로 -->
-            <div class="escrow">
-                <img src="" alt="">
+                <!-- 에스크로 -->
+                <div class="escrow">
+                    <a href="#null"><img src="/sidmul-pc/images/escrow.png" alt="에스크로"></a>
+                </div>
             </div>
         </div>
     </footer>
