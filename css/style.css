@@ -133,7 +133,9 @@ button{background: none;border: none;margin:0;padding: 0;}
 .nvbox nav ul li:last-child a{
   text-align: right;
 }
-
+.nvbox nav ul li:first-child span{
+  margin-right: 10px;
+}
 /* 메인롤링 */
 .main .rolling .roll_list a{
   display: block;
